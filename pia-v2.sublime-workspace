@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"call_us",
+				"call_user_func_array"
+			],
+			[
 				"id",
 				"idProp"
 			],
@@ -80,37 +84,20 @@
 	"buffers":
 	[
 		{
-			"file": "Models/Propiedad.php",
+			"file": "Controllers/HomeController.php",
 			"settings":
 			{
-				"buffer_size": 653,
+				"buffer_size": 299,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "index.php",
+			"file": "Views/Home/index.php",
 			"settings":
 			{
-				"buffer_size": 134,
+				"buffer_size": 1583,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Config/Autoload.php",
-			"settings":
-			{
-				"buffer_size": 215,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Models/Conexion.php",
-			"settings":
-			{
-				"buffer_size": 489,
 				"line_ending": "Windows"
 			}
 		}
@@ -237,18 +224,27 @@
 	"expanded_folders":
 	[
 		"/C/xampp/htdocs/PIA-V2",
-		"/C/xampp/htdocs/PIA-V2/Config",
-		"/C/xampp/htdocs/PIA-V2/Content",
 		"/C/xampp/htdocs/PIA-V2/Controllers",
-		"/C/xampp/htdocs/PIA-V2/Models"
+		"/C/xampp/htdocs/PIA-V2/Views",
+		"/C/xampp/htdocs/PIA-V2/Views/Home",
+		"/C/xampp/htdocs/PIA-V2/Views/Template",
+		"/C/xampp/htdocs/PIA-V2/Views/Template/Css"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/PIA-V2/index.php",
+		"/C/xampp/htdocs/PIA-V2/.htaccess",
+		"/C/xampp/htdocs/PIA-V2/Config/Enrutador.php",
+		"/C/xampp/htdocs/PIA-V2/Views/Home/index.php",
+		"/C/xampp/htdocs/PIA-V2/Config/Request.php",
+		"/C/xampp/htdocs/PIA-V2/Views/template.php",
+		"/C/xampp/htdocs/PIA-V2/Views/Template/Css/index.css",
+		"/C/xampp/htdocs/PIA-V2/Models/Propiedad.php",
+		"/C/xampp/htdocs/PIA-V2/Controllers/HomeController.php",
+		"/C/xampp/htdocs/PIA-V2/Models/Conexion.php",
+		"/C/xampp/htdocs/PIA-V2/Config/Autoload.php",
 		"/C/xampp/htdocs/PIA-V2/Content/index.css",
 		"/C/xampp/htdocs/PIA-V2/index.html",
-		"/C/xampp/htdocs/PIA-V2/Models/Conexion.php",
-		"/C/xampp/htdocs/PIA-V2/.htaccess",
-		"/C/xampp/htdocs/PIA-V2/Controllers/HomeController.php",
 		"/C/sites/Notificaciones/Notificacion.WEB/content/notificaciones/notifications.css",
 		"/C/sites/Nominas/Nomina.WEB/Content/layout.css",
 		"/C/xampp/htdocs/notifications/Content/layout.css",
@@ -332,52 +328,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Models/Propiedad.php",
+					"file": "Controllers/HomeController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 653,
+						"buffer_size": 299,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								460,
-								474
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 90.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "index.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 134,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								130,
-								130
+								288,
+								288
 							]
 						],
 						"settings":
@@ -392,60 +360,33 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "Config/Autoload.php",
+					"buffer": 1,
+					"file": "Views/Home/index.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 215,
+						"buffer_size": 1583,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								166,
-								166
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Models/Conexion.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 489,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
+								390,
+								390
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]

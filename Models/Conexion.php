@@ -2,6 +2,9 @@
 	namespace Models;
 
 	class Conexion {
+		
+		private static $instance;
+
 		private $datos = array(
 			"host" => "localhost",
 			"user" => "root",
@@ -11,9 +14,22 @@
 
 		private $con;
 
-		public function __construct()
+		private function __construct()
 		{
 			$this->con = new \mysqli($this->datos["host"], $this->datos["user"], $this->datos["pass"], $this->datos["db"]);
+		}
+
+		public static function getInstance() {
+			if(!self::$instance) {
+				self::$instance = new self();
+			}
+			return self::$instance;
+		}
+
+		private function __clone() {}
+
+		public function getConnection() {
+			return $this->con;
 		}
 
 		public function consulta($sql) {
@@ -21,7 +37,7 @@
 		}
 
 		public function consultaRetorno($sql) {
-			return $datos->con->query($sql);
+			return $this->con->query($sql);
 		}
 	}
  ?>

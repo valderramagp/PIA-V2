@@ -10,10 +10,12 @@
 		private $fechaCreada;
 		private $fechaActualizada;
 		private $con;
+		private $db;
 
 		public function __construct()
 		{
-			$this->con = new Conexion();
+			$this->db = Conexion::getInstance();
+			$this->con = $this->db->getConnection();
 		}
 
 		public function set($atributo, $valor) {
@@ -25,8 +27,8 @@
 		}
 
 		public function getPropiedades(){
-			$sql = "SELECT * FROM propiedades prop INNER JOIN publicaciones pub ON prop.idProp = pub.idProp";
-			$datos = $this->con->consultaRetorno($sql);
+			$sql = "SELECT * FROM propiedades";
+			$datos = $this->db->consultaRetorno($sql);
 			return $datos;
 		}
 	}
