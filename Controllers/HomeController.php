@@ -17,4 +17,6 @@
 		}
 	}
 
+	$home = new HomeController();
+
 ?>

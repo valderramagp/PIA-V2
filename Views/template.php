@@ -25,6 +25,18 @@
 	    <link href="https://fonts.googleapis.com/css?family=Amiko" rel="stylesheet">
 	</head>
 	<body>
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	    <div class="container-fluid">
+	        <a class="navbar-brand" href="#">
+	            <img src="<?php echo URL; ?>/Views/Template/Imagenes/logo-houses.png" alt="">
+	        </a>
+	        <ul class="nav navbar-nav navbar-right">
+	            <li><a href="">Inicio</a></li>
+	            <li><a href="">Propiedades</a></li>
+	            <li><a href="">Contacto</a></li>
+	        </ul>
+	    </div>
+	</nav>
 <?php
 		}
 

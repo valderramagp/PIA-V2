@@ -24,7 +24,8 @@ html, body {
 }
 
 .jumbotron {
-    position: relative; top: 50px;
+    position: relative;
+    margin-top: 60px;
     text-align: center;
     background: url("../Imagenes/banner-1.jpg");
     background-position: center;
@@ -56,4 +57,39 @@ html, body {
 
 .search-button:hover {
     background: #4C7C3A;
+}
+
+.thumbnail .image-container {
+    height: 200px;
+    width: 100%;
+    background-position: center !important;
+    background-size: 100% !important;
+    background-repeat: no-repeat !important;
+}
+
+#latestProp {
+    background: #F4F4F4;
+    padding: 20px;
+}
+
+.section-title {
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.separator {
+    height: 2px;
+    width: 10%;
+    background: #000;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin-bottom: 30px;
+}
+
+.latestPropList {
+    width: 70%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
