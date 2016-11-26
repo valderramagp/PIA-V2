@@ -31,5 +31,9 @@
 			$datos = $this->db->consultaRetorno($sql);
 			return $datos;
 		}
+
+		public function getRecentProps() {
+			$sql = "SELECT * FROM `propiedades` WHERE fechaCreada > date_sub(curdate(), INTERVAL 1 MONTH) LIMIT 3"
+		}
 	}
 ?>

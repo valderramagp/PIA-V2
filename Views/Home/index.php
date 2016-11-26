@@ -33,30 +33,39 @@
 <div class="container-fluid text-center" id="latestProp">
     <h3 class="section-title">Agregadas Recientemente</h3>
     <div class="separator"></div>
-    <div class="latestPropList">
-        <div class="col-md-3 col-sm-6">
-            <div class="thumbnail">
-                <div class="image-container" style="background: url(<?php echo URL; ?>/Views/Template/Imagenes/banner-1.jpg)"></div>
-                <div class="caption">
-                    <h4 class="text-left">Propiedad</h4>
+    <div class="latestPropContainer">
+        <div class="latestPropList">
+            <?php 
+                $props = $home->index(); 
+                while ($row = mysqli_fetch_array($props)) {
+            ?>
+            <div class="lateProperty">
+                <div class="thumbnail">
+                    <div class="image-container" style="background: url(<?php echo URL; ?>/Views/Template/Imagenes/banner-1.jpg)"></div>
+                    <div class="caption text-left">
+                        <h4>Propiedad</h4>
+                        <div class="label label-warning">VENTA</div>
+                        <div class="label label-default">CASA</div>
+                        <div class="detail-list">
+                            <ul class="left-list">
+                                <li>Cuartos: 5</li>
+                                <li>Estacionamientos: 2</li>
+                                <li>Baños: 3.5</li>
+                            </ul>
+                            <ul class="right-list">
+                                <li>Cuartos: 5</li>
+                                <li>Estacionamientos: 2</li>
+                                <li>Baños: 3.5</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="thumbnail">
-                <div class="image-container" style="background: url(<?php echo URL; ?>/Views/Template/Imagenes/banner-1.jpg)"></div>
-                <div class="caption">
-                    <h4 class="text-left">Propiedad</h4>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="thumbnail">
-                <div class="image-container" style="background: url(<?php echo URL; ?>/Views/Template/Imagenes/banner-1.jpg)"></div>
-                <div class="caption">
-                    <h4 class="text-left">Propiedad</h4>
-                </div>
-            </div>
+            </div>        
+            <?php
+                }
+            ?>
+            
+
         </div>
     </div>
 </div>
