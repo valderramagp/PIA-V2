@@ -36,17 +36,18 @@
     <div class="latestPropContainer">
         <div class="latestPropList">
             <?php 
-                $props = $home->index(); 
-                while ($row = mysqli_fetch_array($props)) {
+                $lista = $model->iterador();
+                while ($lista->hasNext()) {
             ?>
             <div class="lateProperty">
                 <div class="thumbnail">
                     <div class="image-container" style="background: url(<?php echo URL; ?>/Views/Template/Imagenes/banner-1.jpg)"></div>
                     <div class="caption text-left">
-                        <h4>Propiedad</h4>
-                        <div class="label label-warning">VENTA</div>
-                        <div class="label label-default">CASA</div>
+                        <h4><?php echo $row["titulo"]; ?></h4>
+                        <div class="label label-warning"><?php echo $row["operacion"]; ?></div>
+                        <div class="label label-default"><?php echo $row["tipoInmueble"]; ?></div>
                         <div class="detail-list">
+
                             <ul class="left-list">
                                 <li>Cuartos: 5</li>
                                 <li>Estacionamientos: 2</li>

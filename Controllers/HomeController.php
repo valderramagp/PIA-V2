@@ -12,7 +12,11 @@
 
 
 		public function index() {
-			$datos = $this->propiedad->getPropiedades();
+			return $this->propiedad->getRecentProps();
+		}
+
+		public function charDestacados($idProp) {
+			$datos = $this->propiedad->getCaracteristicasDestacadasByProp($idProp);
 			return $datos;
 		}
 	}

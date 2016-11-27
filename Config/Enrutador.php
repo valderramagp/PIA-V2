@@ -17,9 +17,9 @@
 				$mostrar = "Controllers\\" . $controlador;
 				$controlador = new $mostrar;
 				if (!isset($argumento)) {
-					call_user_func(array($controlador, $accion));
+					$model = call_user_func(array($controlador, $accion));
 				} else {
-					call_user_func_array(array($controlador, $accion), $argumento);
+					$model = call_user_func_array(array($controlador, $accion), $argumento);
 				}
 			}
 
